@@ -6,3 +6,14 @@ h1 {
 h2 {
   color: rgb(98, 187, 98);
 }
+
+.card-course-item{
+  margin-top: 16px;
+}
+.checkbox-select-all-options{
+  width: 160px;
+}
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
