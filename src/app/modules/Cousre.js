@@ -4,6 +4,7 @@ const mongooseDelete = require('mongoose-delete')
 const Schema = mongoose.Schema
 
 const Course = new Schema({
+    _id: { type: 'number', },
     name: { type: String, required: true },
     description: { type: String, maxLength: 600 },
     image: { type: String, maxLength: 255 },
@@ -13,7 +14,10 @@ const Course = new Schema({
 
 
 
-}, { timestamps: true })
+}, {
+    _id: false,
+    timestamps: true
+})
 
 // Add plugin
 mongoose.plugin(slug);
